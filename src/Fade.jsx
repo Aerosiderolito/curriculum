@@ -3,10 +3,10 @@ import {useSpring, animated, config} from 'react-spring'
 import RainbowText from 'react-rainbow-text';
 
 export const Animated =()=> {
-    const [flip, set] = useState(true)
+    const [flip, set] = useState(false)
     /*const props = useSpring({ */
-    const props = useSpring({
-        to: { opacity: 0.1, color:"blue" },
+    useSpring({
+        to: { opacity: 0.2, color:"azure" },
         from: { opacity: 1 },
         reset: true,
         reverse: flip,
