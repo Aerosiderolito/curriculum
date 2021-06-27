@@ -4,7 +4,8 @@ import RainbowText from 'react-rainbow-text';
 
 export const Animated =()=> {
     const [flip, set] = useState(false)
-    const props = useSpring({
+    /*const props = useSpring({ */
+    useSpring({
         to: { opacity: 0.2, color:"azure" },
         from: { opacity: 1 },
         reset: true,

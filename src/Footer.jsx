@@ -8,9 +8,6 @@ const Footer = props =>
         <footer id={props.id} >
 
             <p className={"pseudoFooter"}>César Augusto Rodríguez &copy; 2021</p>
-            <a href={"../docs/cvWeb.html"} target={"_blank"} rel={"noreferrer"}>
-                bbbbbbb
-            </a>
 
         </footer>
     );

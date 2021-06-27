@@ -38,12 +38,9 @@ const Skills = props => {
                                 <Collapse in={open}>
                                         <ul>
                                             <li>
-                                                <a href={"./images/cv.jpg"} target={"_blank"} rel={"noreferrer"}>
+                                                <a href={"./src/docs/cvWeb/cv.html"} target={"_blank"} rel={"noreferrer"}>
                                                     <Animated/>
                                                 </a>
-                                            </li>
-                                            <li>
-
                                             </li>
                                         </ul>
                                 </Collapse>
