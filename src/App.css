@@ -211,8 +211,16 @@ p.card-text{
   font-family: 'Caveat Brush', cursive!important;
   font-size: 40px;
   padding-bottom: .5em;
+  text-align: center;
 }
 
+.tableInfo{
+
+  width: 80%;
+  margin-top: 2em;
+
+
+}
 .list-group{
   font-family: 'Caveat Brush', cursive!important;
   font-size: larger;
@@ -233,4 +241,10 @@ nav{
 }
 .nav-item{
   padding-left: 2em;
+}
+
+.alignCellTop{
+  padding-top: 4em;
+  padding-right: 2em ;
+  vertical-align: top;
 }
