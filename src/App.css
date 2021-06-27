@@ -1,38 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.section{
+
+  padding-top:70px;
+  padding-bottom:70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+td h1{
+font-family: 'Indie Flower', cursive;
+}
+
+p{
+  margin-top: 1.5em;
+  font-family: 'Indie Flower', sans-serif;
+  font-size: x-large;
+  margin-left: 2.4em;
+  margin-right: 2.4em;
+  text-align: justify;
+
+}
+
+table{
+
+  margin-left: auto;
+  margin-right: auto;
+}
+table tr td{
+ font-family: 'Indie Flower', cursive;
+  text-align: left;
+
+
+}
+.spacer{
+  padding-top: 1em!important;
+  padding-bottom: 1em!important;
+  font-weight: bolder;
+  color: black;
+  /*color: lightpink;*/
+}
+td h4{
+  font-weight: bold;
+
+}
+td h1, li h2{
+  padding-bottom: 1rem;
+  font-family: 'Indie Flower', cursive!important;
+  font-weight: bolder;
+
+}
+body{
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+.profile{
+
+  margin-right: 2.5em;
+  height: 500px;
+  border: 1rem slategrey outset;
+  border-radius: 7em 7em 7em;
+}
+.profileTab{
+  width: 80%;
+}
+
+table tr td figure {
+  padding: 50px;
+}
+.card-title, .btn-info{
+  font-weight: bolder;
+  font-size: xx-large!important;
+
+}
+.btn-info{
+  font-size: large!important;
+  font-weight: bolder!important;
+}
+.card-text{ font-weight: bolder;}
+
+.square{   list-style-type: square;}
+
+.square::marker{
+  font-size: 100%;
+  list-style-type: square;
+}
+
+#section2, #section3{  border-top:  4px dashed lavender;}
+
+.pseudoFooter{
+  border-top:  2px dashed lavender;
+  margin-top: 2em;
+  padding-top: 2em;
+  font-family: 'Indie Flower', cursive!important;
+  font-size: 18px!important;
+  text-align: center!important;
+}
+
+.listJust{
+  text-align: center;
+  vertical-align: bottom;
+  font-size: xx-large;
+  border-collapse: collapse;
+}
+
+.carta{
+  width: 18rem;
+  margin: 2em;
+  margin-left: 5em!important;
+}
+
+.tableExp{ font-size: large;}
+
+.tableExp ul{list-style-type: none;}
+
+.tableExp td{ margin-left: 30px;}
+
+.alignTd{
+  text-align: left;
+  vertical-align: top;
+}
+.textAnime{
+  font-size: large;
+  font-weight: bold;
+  border: none;
+}
+.prePaneau{  text-align: center;}
+
+.prePaneau ul{ font-size: x-large;}
+
+h4.prePaneau{   text-align: center;}
+
+.biggerH2{
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: xxx-large;
+}
+
+table.skillList{
+  margin-left: 15em;
+  list-style-type: none;
+}
+skillList{ list-style-type: none;}
+
+.leftText a, .leftText ul, p.leftText, h4.leftText{
+  text-align: left!important;
+}
+
+.leftText li{
+  padding: 10px;
+  margin-left: -1em;
+}
+
+.smallItem{ font-size: 19px;}
+
+#grid .card{
+
+  margin: 2em ;
+  width: 400px;
+
+}
+
+footer{
+  background-image: url("images/backgroundSec1.jpg");
+  background-size: cover;
+  padding-bottom: 2em;
+  text-align: center!important;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+@media screen
+and (max-width: 1400px)
+and (min-width: 480px)
+{
+  html{
+    min-width: 1400px!important;
   }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table.listJust{ width: 90%;}
+
+.alignTwoCols{
+  display: block;
+  margin-left: 5em!important;
+  margin-right: auto!important;
+
+}
+p.card-text{
+  font-size: large;
+  margin: 0;
+  color: darkcyan;
+
+}
+.cardDemo:hover, #grid .card{  box-shadow: 5px 5px 5px darkcyan;}
+
+.sectionTitle{
+  font-family: 'Caveat Brush', cursive!important;
+  font-size: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.subsectionTitle{
+  font-family: 'Caveat Brush', cursive!important;
+  font-size: 40px;
+  padding-bottom: .5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-group{
+  font-family: 'Caveat Brush', cursive!important;
+  font-size: larger;
+}
+button{
+  text-align: left!important;
 }
