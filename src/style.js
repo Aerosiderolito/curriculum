@@ -25,9 +25,8 @@ export const Cv = props =>{
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant={"primary"} onClick={handleClose} href={"./docs/CV_EN"}
-                    download={"docs/CV_EN"}>
-                        CV.pdf
+                    <Button variant={"primary"} onClick={handleClose} href={"https://www.overleaf.com/read/gkprjkqnwfnw"}>
+                        Voir CV
                     </Button>
                 </Modal.Footer>
             </Modal>
