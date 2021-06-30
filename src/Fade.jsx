@@ -1,22 +1,19 @@
-import React, {useState} from "react";
-import {useSpring, animated, config} from 'react-spring'
-import RainbowText from 'react-rainbow-text';
+import {useSpring, animated} from 'react-spring'
+import {InfoCircleFill} from "react-bootstrap-icons";
 
 export const Animated =()=> {
-    const [flip, set] = useState(false)
-    /*const props = useSpring({ */
-    useSpring({
-        to: { opacity: 0.2, color:"azure" },
-        from: { opacity: 1 },
-        reset: true,
-        reverse: flip,
-        delay: 200,
-        config: config.molasses,
-        onRest: () => set(!flip),
 
+    const styles = useSpring({
+        loop: true,
+        to: [
+            { opacity: 1, color: '#ffaaee' },
+            { opacity: 0, color: 'rgb(14,26,19)' },
+        ],
+        from: { opacity: 0, color: 'red' },
     })
+    return <animated.div style={styles}><InfoCircleFill/> Plus d'informations</animated.div>
 
-    return <animated.span className={"textAnime"}>
-        <RainbowText lightness={0.5} saturation={1}>CV version HTML</RainbowText>
-    </animated.span>
+    /*return <animated.span className={"textAnime"}>
+        <RainbowText lightness={0.4} saturation={.8}></RainbowText>
+    </animated.span>*/
 }

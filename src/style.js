@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {Button, Modal} from "react-bootstrap";
-import {FileArrowDownFill} from "react-bootstrap-icons";
+import {QuestionCircleFill} from "react-bootstrap-icons";
 
-export const Cv = props =>{
+export const PopUpMenu = props =>{
 
     const [show, setShow] = useState(false);
 
@@ -12,21 +12,22 @@ export const Cv = props =>{
     return (
 
         <>
-            <button onClick={handleShow} id={props.id} className={props.className}>
-                <FileArrowDownFill/> Curriculum Vitae
-            </button>
+            <a onClick={handleShow}  href={"/#null"} className={props.className}><QuestionCircleFill/>
+                 &nbsp;Quoi d'autre?
+            </a>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Mon curriculum</Modal.Title>
+                    <Modal.Title>Activités</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Voulez-vous voir la version PDF de mon curriculum</Modal.Body>
+                <Modal.Body>
+                    <span><b>Je participe de temps en temps aux activités reliés à l'informatique.
+                        <span/></b></span><br/>
+                    Ce nom de domaine a été obtenu dans le Hackathon 2021 (PolyTechnique)😎
+                </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
-                    </Button>
-                    <Button variant={"primary"} onClick={handleClose} href={"https://www.overleaf.com/read/gkprjkqnwfnw"}>
-                        Voir CV
                     </Button>
                 </Modal.Footer>
             </Modal>
